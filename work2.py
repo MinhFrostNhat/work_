@@ -24,7 +24,7 @@ def run():
             }
         logger.info("status 200: ok")
     except Exception as e:
-        return f"logger.error('error')"
+        return f"logger.error('error status 400')"
     try:
             response = requests.post(url=endpoint, json=body, headers=headers)
             content = response.json()['data']
@@ -47,7 +47,7 @@ def run():
                 for row in rows:
                     logger.warning(row)
     except Exception as e:
-        return logger.error('???')
+        return logger.error('cant not do this error database')
 if __name__== "__main__" :
     start_time = time.time()
     seconds = 0

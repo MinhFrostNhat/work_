@@ -29,7 +29,7 @@ def api_data():
             with sqlite3.connect('price.db') as conn:
                 curs = conn.cursor()
                 curs.execute("CREATE TABLE IF NOT EXISTS price (Price REAL)")
-                logger.info('CREATE TABLE')
+                logger.info('Create table')
                 for each in content:
                     price = float(each['adv']['price'])
                     curs.execute("INSERT INTO price VALUES (?)", (price,))

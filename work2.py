@@ -19,7 +19,7 @@ def api_data():
             "merchantCheck": False,
         }
         headers = {
-            "Content-Type": "application/jsonz",
+            "Content-Type": "application/json",
         }
         response = requests.post(url=endpoint, json=body, headers=headers)
         if response.status_code == 200:

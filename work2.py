@@ -16,7 +16,6 @@ def api_data():
             "asset": "USDT",
             "tradeType": "BUY",
             "fiat": "VND",
-            # "publisherType":null,
             "merchantCheck": False,
         }
         headers = {

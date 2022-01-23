@@ -1,9 +1,9 @@
 import requests
-from work import set_loggin
+from work import set_log
 import sqlite3
 import time
 
-logger = set_loggin()
+logger = set_log()
 
 
 def api_data():
